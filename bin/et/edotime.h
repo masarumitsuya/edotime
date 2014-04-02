@@ -83,6 +83,12 @@ edotime_get_time( edotime_t t,
                   double time );
 
 extern double
+edotime_get_hour_day( edotime_t t );
+
+extern double
+edotime_get_hour_night( edotime_t t );
+
+extern double
 edotime_get_contemporarytime( edotime_t t,
                               unsigned char time );
 

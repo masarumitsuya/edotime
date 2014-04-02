@@ -212,6 +212,23 @@ edotime_get_time( edotime_t t,
 }
 
 double
+edotime_get_hour_day( edotime_t t )
+{
+  if (t == NULL) return 0;
+
+  return t->segtime_day;
+}
+
+double
+edotime_get_hour_night( edotime_t t )
+{
+  if (t == NULL) return 0;
+
+  return t->segtime_night;
+}
+
+
+double
 edotime_get_contemporarytime( edotime_t t,
                               unsigned char time )
 {
