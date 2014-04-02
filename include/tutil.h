@@ -59,7 +59,7 @@ time_convert_second( double hundredth ) {
   min = hundredth - hour;
   min *= 60.0;
   sec = min - floor(min);
-  sec *= 10.0;
+  sec *= 60.0;
 
   return floor(sec);
 }
